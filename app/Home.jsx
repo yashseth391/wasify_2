@@ -5,7 +5,12 @@ import {
   useCameraPermission,
 } from "react-native-vision-camera";
 import { Camera, useCameraDevices } from "react-native-vision-camera";
-
+import Animated, {
+  useSharedValue,
+  withTiming,
+  useAnimatedStyle,
+  Easing,
+} from "react-native-reanimated";
 const Home = () => {
   //const device = useCameraDevices("back");
   const { hasPermission } = useCameraPermission();
